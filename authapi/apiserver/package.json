@@ -1,0 +1,33 @@
+{
+    "name": "authserver",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "start": "nodemon ./bin/www.js",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+        "cleartest": "jest --clearCache&&node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles"
+    },
+    "dependencies": {
+        "cookie-parser": "~1.4.4",
+        "cors": "^2.8.5",
+        "csurf": "^1.11.0",
+        "debug": "~2.6.9",
+        "dotenv": "^16.0.0",
+        "express": "~4.16.1",
+        "express-session": "^1.17.2",
+        "http-errors": "~1.6.3",
+        "jade": "^0.29.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.2.4",
+        "morgan": "~1.9.1",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "jest": "^27.5.1",
+        "superagent": "^7.1.2",
+        "supertest": "^6.2.2"
+    }
+}

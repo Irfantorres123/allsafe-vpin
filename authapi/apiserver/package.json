@@ -4,6 +4,7 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "deploy": "node ./bin/www.js",
         "start": "nodemon ./bin/www.js",
         "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
         "cleartest": "jest --clearCache&&node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles"
@@ -13,7 +14,7 @@
         "cors": "^2.8.5",
         "csurf": "^1.11.0",
         "debug": "~2.6.9",
-        "dotenv": "^16.0.0",
+        "dotenv": "^16.0.3",
         "express": "~4.16.1",
         "express-session": "^1.17.2",
         "http-errors": "~1.6.3",

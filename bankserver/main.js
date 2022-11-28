@@ -1,4 +1,3 @@
-const BASE_URL = "http://localhost:5000";
 window.onload = async function () {
   let response = await fetch(`${BASE_URL}/services/list?${Date.now()}`, {});
   let services = await response.json();

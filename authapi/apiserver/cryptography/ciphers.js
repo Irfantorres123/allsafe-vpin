@@ -1,5 +1,6 @@
 import crypto from "crypto";
 var ivString = "1d08ae1fb4a9373ef94d0b0f3e1ec32a";
+
 var aes_key = Buffer.from(process.env.AES_KEY, "hex");
 var iv = Buffer.from(ivString, "hex");
 //data must be a buffer

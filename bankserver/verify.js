@@ -8,7 +8,7 @@ window.onload = async function () {
   verifyButton.onclick = async function () {
     const code = document.getElementById("code").value;
     let response = await fetch(
-      `http://localhost:5000/vcs/verify?response=${code}&username=${username}`,
+      `${BASE_URL}/vcs/verify?response=${code}&username=${username}`,
       {
         headers: {
           "Content-Type": "application/json",

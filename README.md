@@ -82,6 +82,17 @@ them at a time, this will not cause any collisions.
   
 The **Get Code** button does the following,
 
-It fetches the call associated with the particular user and then uses the VCS stored locally for that service to generate the response and displays it in a box. Clicking
-on that box will copy the coded into clipboard so that it can be pasted directly in the bank application for authentication.
+It fetches the call associated with the particular user and then uses the VCS stored locally for that service to generate the response and displays it in a box. Clicking on that box will copy the coded into clipboard so that it can be pasted directly in the bank application for authentication.
   
+**Running the servers**
+
+I have written a script called start.cmd to automatically start the three application servers simply double clicking on the script will start the servers provided the 
+following binaries are installed and configured in the PATH environment variable.
+
+docker : https://docs.docker.com/desktop/install/windows-install/ 
+
+docker-compose : https://docker-docs.netlify.app/compose/install/
+
+npm : https://nodejs.org/en/download/
+
+Once these binaries are installed, run docker desktop and after the docker daemon has started running, run the start.cmd file, If all worked correctly, you should see the applications starting up soon once the dependencies are installed and the build is complete.

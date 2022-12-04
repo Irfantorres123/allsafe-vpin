@@ -8,10 +8,8 @@ import createHttpError from "http-errors";
 import { verifyService } from "../services/methods.js";
 var router = express.Router();
 
-
-
 /*
-x-app-id header should be equal to app id allocated to the app
+x-service-id header should be equal to service id allocated to the app
 body must contain a unique username for the app
 adds user to database associated with this app
 */
